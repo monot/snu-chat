@@ -1,6 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  /* config options here */
+  outputFileTracingIncludes: {
+    '/api/chat': ['./data/embeddings.json'],
+  },
 };
 
 export default nextConfig;
